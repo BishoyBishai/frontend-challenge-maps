@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../Header';
-import Main from '../Main';
-import './App.css';
+import Header from "../Header";
+import Main from "../Main";
+import styled from "styled-components";
+
+const AppContainer = styled.div`
+  text-align: center;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <AppContainer>
       <Header />
-			<Main />
-    </div>
+      <Main />
+    </AppContainer>
   );
 }
 
